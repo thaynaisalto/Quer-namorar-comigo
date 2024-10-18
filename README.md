@@ -1,10 +1,12 @@
 # Dia dos namorados
-![image](https://github.com/anavitoriagoess/Dia-dos-namorados/assets/97069033/e0a96cf6-c1ba-4d44-955d-980fc627d4ba)
 
-## Stacks Utilizadas
-- Html 
-- Css 
-- JavaScript
+Descrição
 
-## Instagram
-- [@inspecionando_](https://instagram.com/inspecionando_?igshid=OGQ5ZDc2ODk2ZA==)
+Este projeto é uma surpresa especial criada para fazer uma surpresinha para seu namorado/a! A página possui dois botões, que só permite clicar apenas no "Sim", garantindo que a resposta seja positiva.
+
+Funcionalidades
+
+Página com design simples e romântico.
+Um botão de resposta que só permite o clique no "Sim".
+Mensagem personalizada de confirmação após o clique, para comemorar o "Sim".
+
