@@ -13,8 +13,9 @@ body {
     align-items: center;
     flex-direction: column;
     position: relative; /* Importante para o overlay */
-    height: 600px;
-    width: 600px;
+    height: 80vh; /* Ajuste a altura para ser responsivo */
+    width: 90vw; /* Ajuste a largura para ser responsivo */
+    max-width: 600px; /* Limite máximo de largura */
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
@@ -34,7 +35,7 @@ body {
 }
 
 .card > .question p {
-    font-size: 32px;
+    font-size: 5vw; /* Tamanho de fonte responsivo */
     font-family: sans-serif;
     font-weight: 600;
     z-index: 2; /* Para garantir que fique acima do overlay */
@@ -49,11 +50,12 @@ body {
 }
 
 .btn-yes, .btn-no {
-    height: 48px;
-    width: 100px;
+    height: 8vh; /* Altura responsiva */
+    width: 30%; /* Largura responsiva */
+    min-width: 100px; /* Largura mínima */
     border: none;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 4vw; /* Tamanho de fonte responsivo */
     font-weight: bold;
     cursor: pointer;
     z-index: 2;
@@ -73,10 +75,27 @@ body {
 }
 
 .answer > p {
-    font-size: 48px;
+    font-size: 6vw; /* Tamanho de fonte responsivo */
     font-family: sans-serif;
     font-weight: bold;
     color: #FF6EB4;
     text-shadow: 1px 1px #000;
     z-index: 2;
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 600px) {
+    .card {
+        height: 70vh; /* Menor altura em telas pequenas */
+        width: 90vw; /* Largura responsiva */
+    }
+
+    .btn-yes, .btn-no {
+        height: 6vh; /* Ajustar altura dos botões */
+        width: 40%; /* Ajustar largura dos botões */
+    }
+
+    .card > .question p, .answer > p {
+        font-size: 8vw; /* Ajuste do tamanho da fonte */
+    }
 }
